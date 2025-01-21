@@ -89,9 +89,87 @@
     max-height: 35rem;
 }
 /* banner end */
+/* curriculum card */
+.curriculum{
+    margin: 6rem auto;
+    text-align: center;
+    max-width: 90rem;
+    max-height: 55rem;
+}
+.curriculum-content{
+    margin-top: 5rem;
+    padding: 4rem;
+}
+.curriculum-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 72.5rem;
+    max-height: 30rem;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    gap: 1.75rem;
+} 
+.curriculum-content>h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.card-content{
+    max-width: 23rem;
+    max-height: 32rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 20px -10px;
+}
+.card-img{
+    max-width: 8.5rem;
+    max-height: 8.5rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+}
+.card-dis{
+    font-size: 1rem;
+    font-weight: medium;
+    color: #808080;
+} 
+.curri-link{
+    text-decoration: none;
+}
+#cl1{color: skyblue;}
+#cl2{color: orange; }
+#cl3{color: purple; }
+/* gradient */
+#cc1{background: linear-gradient(skyblue, white 5%);}
+#cc2{background: linear-gradient(orange , white 5% );}
+#cc3{background: linear-gradient(to bottom, purple , white  5%);}
+/* icon */
+.card-icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* media query */
 @media screen and (max-width:576px) {
     .banner{
         flex-direction: column-reverse;
+        width: 22rem;
+        height: 45rem;
     
     }
     .banner-img{
@@ -115,4 +193,18 @@
         width: 100%;
         background-color: orange;
         display: inline-block;
-}
+    }
+    /* first card section */
+    .curriculum{flex-direction: column;}
+    .curri-media{
+        width: 390px;
+        height: 1990px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .curriculum-card{
+        flex-wrap: wrap;
+    }
+    .card-icon{display: none;}
+    
